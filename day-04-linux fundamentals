@@ -1,0 +1,48 @@
+# Linux Fundamentals – Day 01 (TryHackMe)
+
+Today I learned Linux fundamentals using TryHackMe as part of my Cyber Security learning journey. Linux is a core skill for ethical hacking, system administration, and blue team operations.
+
+Linux is a command-line–driven operating system where most tasks are performed using terminal commands. Understanding basic navigation, file handling, user management, and searching is essential.
+
+Commands learned today:
+
+pwd – print current working directory  
+ls – list files and directories  
+ls -la – list all files including hidden files with permissions  
+cd folder_name – change directory  
+cd .. – move to parent directory  
+
+touch file.txt – create a file  
+mkdir folder – create a directory  
+rm file.txt – delete a file  
+rm -r folder – delete a directory  
+cp source.txt destination.txt – copy files  
+mv oldname.txt newname.txt – rename or move files  
+
+cat file.txt – display file contents  
+less file.txt – view file with scrolling  
+head file.txt – show first 10 lines  
+tail file.txt – show last 10 lines  
+
+find / -name file.txt – search for a file  
+grep "text" file.txt – search text inside a file  
+grep THM access.log – find flags in log files  
+
+whoami – show current user  
+id – display user ID and groups  
+uname -a – display system information  
+
+echo "TryHackMe" > file.txt – overwrite file content  
+echo "password123" > passwords – replace file content  
+echo "Hello Linux" >> file.txt – append content to file  
+
+Key takeaways:
+Linux is powerful and efficient when used from the terminal. File paths, permissions, and logs play a critical role in cyber security. Mastering basic commands is the foundation for advanced hacking and defensive techniques.
+
+Next steps:
+Learn Linux permissions (chmod, chown), practice log analysis, explore bash scripting, and continue TryHackMe Linux Fundamentals Part 2.
+
+Platform: TryHackMe  
+Day: 01  
+Focus: Linux Fundamentals for Cyber Security
+
