@@ -1,0 +1,25 @@
+## 🚀 Today I Learned: Booting Kali Linux on Laptop / PC
+
+Today I learned how to boot **Kali Linux** on a laptop/PC using a bootable USB drive.
+
+### 🔹 What I Did
+- Downloaded the Kali Linux ISO
+- Created a bootable USB using a flashing  tool (rufus)
+- Restarted the system and opened the Boot Menu
+- Selected the USB device
+- Successfully booted into Kali Linux
+
+### 🔹 Key Learnings
+- Kali Linux can be run without installing it on the hard disk
+- Booting is done through BIOS/UEFI boot options
+- Kali Linux is used for ethical hacking and cybersecurity learning
+- Linux terminal basics are important to use Kali effectively
+
+### 🔹 Why This Is Important
+Booting Kali Linux helps in:
+- Learning Linux commands
+- Practicing cybersecurity tools
+- Understanding ethical hacking in a legal way
+
+### 🔹 Conclusion
+Booting Kali Linux is the first step toward learning cybersecurity and ethical hacking. It provides a hands-on environment to practice security concepts.
