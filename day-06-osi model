@@ -1,0 +1,139 @@
+# OSI Model – Explained Layer by Layer
+
+Today I learned about the **OSI (Open Systems Interconnection) Model**, which explains how data is transmitted from one system to another in a network. The OSI model is divided into **7 layers**, and each layer has a specific responsibility.
+
+Understanding the OSI model is very important for **networking, cybersecurity, troubleshooting, and ethical hacking**.
+
+---
+
+## What is the OSI Model?
+
+The OSI Model is a **conceptual framework** that standardizes network communication into seven layers.  
+Each layer performs a specific task and passes data to the next layer.
+
+---
+
+## OSI Model Layers (Top to Bottom)
+
+### 7. Application Layer
+- Closest layer to the end user
+- Provides network services to applications
+- User directly interacts with this layer
+
+**Examples:**
+- HTTP / HTTPS
+- FTP
+- SMTP
+- DNS
+- SSH
+
+**Use case:**  
+Accessing a website using a browser
+
+---
+
+### 6. Presentation Layer
+- Translates data into a readable format
+- Handles **encryption and decryption**
+- Handles data compression
+
+**Examples:**
+- SSL / TLS
+- JPEG, MP4, PNG formats
+
+**Use case:**  
+Encrypting data during HTTPS communication
+
+---
+
+### 5. Session Layer
+- Manages sessions between systems
+- Establishes, maintains, and terminates connections
+- Handles authentication and session recovery
+
+**Use case:**  
+Staying logged into a website during a session
+
+---
+
+### 4. Transport Layer
+- Ensures reliable or fast data delivery
+- Controls data flow and error handling
+- Uses **port numbers**
+
+**Protocols:**
+- TCP (Reliable, connection-oriented)
+- UDP (Fast, connectionless)
+
+**Examples:**
+- HTTP → Port 80
+- HTTPS → Port 443
+- SSH → Port 22
+
+---
+
+### 3. Network Layer
+- Responsible for routing and logical addressing
+- Uses **IP addresses**
+- Determines the best path for data
+
+**Protocols:**
+- IP (IPv4 / IPv6)
+- ICMP
+
+**Devices:**  
+Routers
+
+
+ 2. Data Link Layer
+- Transfers data within the same network
+- Uses **MAC addresses**
+- Converts packets into frames
+- Error detection using CRC
+
+**Examples:**
+- Ethernet
+- ARP
+- Switches operate at this layer
+
+
+ 1. Physical Layer
+- Transmits raw bits (0s and 1s)
+- Deals with physical media and signals
+
+**Examples:**
+- Ethernet cables
+- Fiber optics
+- Wi-Fi radio signals
+- Network Interface Cards (NIC)
+
+---
+
+## OSI Model Memory Trick
+
+**"Please Do Not Throw Sausage Pizza Away"**
+
+1. Physical  
+2. Data Link  
+3. Network  
+4. Transport  
+5. Session  
+6. Presentation  
+7. Application  
+
+---
+
+## Why the OSI Model is Important
+
+- Helps in **network troubleshooting**
+- Used in **cybersecurity and ethical hacking**
+- Makes it easy to understand **where attacks occur**
+- Commonly asked in **interviews and exams**
+
+---
+
+## Conclusion
+
+The OSI Model is not outdated.  
+It is a **foundational concept** that helps understand how networks function internally.  
+Every networking and cybersecurity professional should understand this model clearly.
