@@ -1,0 +1,170 @@
+# IPv4, IPv6 and Nmap Scanning using Kali Linux
+
+## What is an IP Address
+An IP address (Internet Protocol address) is a unique number assigned to every device on a network.  
+It allows devices to communicate with each other over the internet or a local network.
+
+Without an IP address, data would not know where to go.
+
+---
+
+## IPv4
+
+IPv4 is the most commonly used IP addressing system.
+
+It is a 32-bit address written in decimal format.
+
+Example:
+192.168.1.1
+
+It contains 4 octets separated by dots.  
+Each octet ranges from 0 to 255.
+
+Total IPv4 addresses:
+About 4.3 billion.
+
+### Private IPv4 ranges
+Used in local networks:
+
+10.0.0.0 – 10.255.255.255  
+172.16.0.0 – 172.31.255.255  
+192.168.0.0 – 192.168.255.255  
+
+These are the ranges we usually scan in Kali Linux labs.
+
+---
+
+## IPv6
+
+IPv6 is the newer version of IP addressing created because IPv4 addresses were running out.
+
+It is a 128-bit address written in hexadecimal.
+
+Example:
+2001:0db8:85a3:0000:0000:8a2e:0370:7334
+
+Advantages:
+- Very large number of addresses  
+- Better efficiency  
+- Improved routing  
+- Built for future networks  
+
+---
+
+## Public vs Private IP
+
+Public IP:
+Assigned by ISP and visible on the internet.
+
+Private IP:
+Used inside local networks and labs.
+
+Example:
+192.168.1.5
+
+Most Nmap practice scanning is done on private IP ranges.
+
+---
+
+## What is Nmap
+
+Nmap (Network Mapper) is a network scanning tool used for:
+
+- Discovering devices on a network  
+- Finding open ports  
+- Detecting services  
+- Security testing  
+- Network mapping  
+
+It sends packets to an IP address and analyzes responses.
+
+Kali Linux comes with Nmap preinstalled.
+
+Check version:
+nmap --version
+
+---
+
+## How Nmap Uses IP Addresses
+
+Nmap requires a target IP or network range.
+
+Scan single IP:
+nmap 192.168.1.1
+
+Scan full network:
+nmap 192.168.1.0/24
+
+This scans all devices in that subnet.
+
+---
+
+## Common Nmap Commands
+
+Basic scan:
+nmap <ip>
+
+Host discovery:
+nmap -sn 192.168.1.0/24
+
+SYN scan:
+nmap -sS <ip>
+
+Service version detection:
+nmap -sV <ip>
+
+OS detection:
+nmap -O <ip>
+
+Aggressive scan:
+nmap -A <ip>
+
+---
+
+## Example Lab Scan
+
+Step 1: Find your IP
+ip a
+
+Step 2: Scan network
+nmap 192.168.1.0/24
+
+Step 3: Scan specific device
+nmap -sV 192.168.1.5
+
+---
+
+## What Nmap Can Detect
+
+- Active hosts  
+- Open ports  
+- Running services  
+- Operating system  
+- Network structure  
+
+This helps understand network security and configuration.
+
+---
+
+## Important Note
+
+Use Nmap only on:
+- Your own lab  
+- Practice environments  
+- Networks you have permission to scan  
+
+Unauthorized scanning can be illegal.
+
+---
+
+## Conclusion
+
+Today I learned:
+
+- What IPv4 and IPv6 are  
+- How IP addressing works  
+- How Nmap scans networks  
+- How to perform basic scans in Kali Linux  
+
+Understanding IP addresses and Nmap is a fundamental skill in networking and cybersecurity.
+
