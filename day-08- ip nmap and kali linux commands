@@ -1,0 +1,61 @@
+# Kali Linux & Nmap Beginner Practice
+
+## Overview
+
+Today I practiced basic commands in Kali Linux and performed simple network scanning using Nmap.
+This repository is a record of my hands-on learning and notes.
+
+## Topics Covered
+
+* Basic Linux terminal commands
+* File and directory creation
+* Understanding IP addresses
+* Local network scanning
+* Identifying devices and open ports
+
+## Commands Practiced
+
+### File Commands
+
+```
+touch file.txt
+mkdir test_folder
+ls
+cd test_folder
+pwd
+```
+
+### Network Commands
+
+```
+ip a
+ifconfig
+```
+
+### Nmap Scanning
+
+```
+nmap 192.168.1.1
+nmap -sS 192.168.1.0/24
+nmap -A target_ip
+```
+
+## What I Learned
+
+* How devices are discovered on a network
+* Basics of ports and services
+* How Nmap scanning works
+* Importance of ethical and legal usage
+
+## Disclaimer
+
+All scans were performed on my own lab network for educational purposes only.
+
+## Next Learning Goals
+
+* Advanced Nmap scanning
+* Wireshark basics
+* Networking fundamentals
+* Ethical hacking labs
+
+Consistent practice. Building cybersecurity skills step by step.
