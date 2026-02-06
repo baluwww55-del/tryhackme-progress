@@ -5,6 +5,8 @@ This repository tracks my hands-on learning and progress in cybersecurity.
 ## Learning Areas
 - Careers in Cyber Security
 - Defensive Security
+- offensive security
+- pentesting 
 - SOC Fundamentals
 - Linux and Networking Basics
 - Blue Team Concepts
